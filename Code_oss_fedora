@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Script zur Installation von Code-OSS auf Fedora (TemplateVM freundlich)
+echo "Starte Installation von Code-OSS..."
+
+# 1. DNF Copr-Plugin sicherstellen
+sudo dnf install -y 'dnf-command(copr)'
+
+# 2. Das che/che Repository aktivieren (enthält code-oss)
+echo "Aktiviere Copr Repository: che/che..."
+sudo dnf copr enable -y che/che
+
+# 3. Installation von Code-OSS
+echo "Installiere code-oss..."
+sudo dnf install -y code
+
+echo "------------------------------------------------"
+echo "Installation abgeschlossen!"
+echo "Falls dies eine Qubes TemplateVM ist: Shutdown durchführen"
+echo "und in der AppVM 'Refresh Applications' klicken."
+echo "------------------------------------------------"
