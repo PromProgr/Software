@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo dnf install thunderbird
+
+sudo dnf install libreoffice
+
