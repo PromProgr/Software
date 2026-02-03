@@ -15,7 +15,8 @@ cd projectlibre-1.9.8
 
 ./projectlibre.sh
 
-sudo ln -s /home/user/Downloads/projectlibre-1.9.8/projectlibre.sh /usr/local/bin/projectlibre
 
+# alles ins .sh ins opt/ Rest in /usr/bin
+sudo ln -sf /opt/projectlibre/projectlibre.sh /usr/bin/projectlibre
 
-echo "alias projectlibre='/home/user/QubesIncoming/disp5534/projectlibre-1.9.3/projectlibre.sh'" >> ~/.bashrc
+sudo mv  projectlibre.bat license lib /usr/bin/projectlibre
