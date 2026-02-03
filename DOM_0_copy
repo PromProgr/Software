@@ -1,0 +1,9 @@
+#Anleitung Dateien in DOM0 kopieren
+
+# Datei in work-vm erstellen unter usb-ui.sh 
+
+
+# in Dom0 
+qvm-run -p work 'cat /home/user/usb-ui.sh' | sudo tee /home/user/usb-ui.sh > /dev/null
+
+
